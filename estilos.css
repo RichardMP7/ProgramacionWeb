@@ -1,0 +1,207 @@
+/*-------------------Estilos Diego y Stefany---------------------------------*/
+
+.container {
+    position: relative;
+    max-width: 1900px;
+    padding: 5px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+}
+
+.brand h2 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.brand span {
+    color: #ff5858;
+    font-weight: 900;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+}
+
+.menu-item :hover {
+    background-color: rgb(50, 50, 50);
+    color: #58d0ff;
+}
+
+.has-sub-menu a {
+    position: relative;
+    padding-right: 35px;
+}
+
+.has-sub-menu:after {
+    content: '+';
+    display: block;
+    position: absolute;
+    top: 40%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #58ffbc;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.has-sub-menu :hover {
+    color: #e3ff58;
+}
+
+
+.sub-menu {
+    position: absolute;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(-200px);
+    pointer-events: none;
+    transition: 0.4s ease-out;
+    min-width: 100%;
+    width: max-content;
+    background-color: #222;
+    list-style-type: none;
+}
+
+.menu-item {
+    width: 100%;
+}
+
+.has-sub-menu:hover>.sub-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.has-sub-menu >.sub-menu {
+    top: 0;
+    right: 100%;
+}
+
+/*----------------------------------------------------*/
+
+.flex-container {
+    display: flex;
+    background-size: cover;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 50px;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.flex-container>div {
+    background-color: darkcyan;
+    width: 1000px;
+    margin: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: #272229;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 75px;
+}
+
+aside{
+    background-color:  darkcyan;
+    padding: 30px;
+    grid-column: 4/5;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;   
+    
+}
+
+article{
+    padding: 30px;
+    background-color: #fff;
+    grid-column: 1/4;
+    margin: auto;
+    width: 79%;
+}
+footer{
+    background-color: darkcyan;
+    color: #fff;
+    padding: 10px;
+}
+
+img {
+    max-width: 100%; /* establecer un ancho máximo del 100% */
+    height: auto; /* permitir que la altura se ajuste proporcionalmente */
+  }
+
+  .container-sm{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.inputs{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(252, 242, 232);
+}
+#btnCalcular,#btnBorrar{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#venta,#ganancia{
+    text-align: center;
+}
+
+h6{
+    color: #fbfbfb;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 80px;
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 80px;
+}
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+h5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+/* pruebaaa menu desplegable */
+
+
+
+.cenimag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    
+}
